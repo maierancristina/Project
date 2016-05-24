@@ -1,0 +1,42 @@
+﻿@model HeartPharam.Models.PatientDiagnosis
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PatientDiagnosis</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DiagnosisRank)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiagnosisRank)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatientName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PatDiagnos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatDiagnos)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
